@@ -221,9 +221,9 @@ No external libraries are required.
 
 # Author
 
-**Sayyed Asif (CSE AI & ML)**
-**92460118359**
-**5EN12**
+**eswar kakula (CSE AI & ML)**
+**92460118184**
+**5EN17**
 
 ---
 
