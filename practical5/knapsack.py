@@ -1,5 +1,4 @@
 def knapsack_01(weights, values, capacity):
-    
     dp = [0] * (capacity + 1)
     
     for i in range(len(weights)):
@@ -10,9 +9,17 @@ def knapsack_01(weights, values, capacity):
     return dp[capacity]
 
 if __name__ == "__main__":
-    item_values = [60, 100, 120]
-    item_weights = [10, 20, 30]
-    knapsack_capacity = 50
+    print("--- 0/1 Knapsack Calculator ---")
     
-    max_value = knapsack_01(item_weights, item_values, knapsack_capacity)
-    print(f"Maximum value obtainable: {max_value}")  
+    item_values = list(map(int, input("Enter item values separated by spaces: ").split()))
+    
+    item_weights = list(map(int, input("Enter item weights separated by spaces: ").split()))
+    
+    knapsack_capacity = int(input("Enter the maximum knapsack capacity: "))
+    
+    if len(item_values) != len(item_weights):
+        print("\nError: The number of values must match the number of weights!")
+    else:
+        max_value = knapsack_01(item_weights, item_values, knapsack_capacity)
+        print(f"\nMaximum value obtainable: {max_value}")
+ 
