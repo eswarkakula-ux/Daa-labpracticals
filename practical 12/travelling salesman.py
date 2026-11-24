@@ -29,11 +29,11 @@ def tsp(dist):
 
 
 if __name__ == "__main__":
-    graph = [,
- ,
- ,
- ,
- ,
+    graph = [
+        [0, 10, 15, 20],
+        [10, 0, 35, 25],
+        [15, 35, 0, 30],
+        [20, 25, 30, 0],
     ]
 
     min_tour_cost = tsp(graph)
